@@ -132,3 +132,82 @@ while divisor <= num:
     if num % divisor == 0:
       print(divisor)
     divisor += 1 
+
+def fibonacci(n):
+ if n<=1:
+   return n
+ else:
+   return (fibonacci(n-1) + fibonacci(n-2))
+userInput = int(input("Enter a number: "))
+for y in range(userInput): 
+ print(fibonacci(y) )
+
+
+def fibonnaci(n):
+    if n<= 1:
+        return n 
+    else:
+        return (fibonnaci(n -2) + fibonnaci(n-1))
+    
+userInput = int(input("enter: "))    
+for i in range(userInput):
+    print(fibonnaci(i))
+
+Count Vowels in a String
+vowels = 'aeiou'
+string = "hello world"
+count = 0
+for char in string:
+ if char.lower() in vowels:
+  count += 1
+print(count)
+
+
+
+
+
+fibonacci sequence
+
+def fibonacci(n):
+    if n<=1:
+        return n
+    else:
+        return (fibonacci(n-2) + fibonacci(n-1))
+userInput = int(input("Enter a number: "))    
+for i in range(userInput + 1):
+    print(fibonacci(i))
+
+divisors of a number
+
+num = int(input("Enter a number: "))
+divisor= 1
+
+while divisor <= num:
+    if num%divisor==0:
+        print(divisor)
+    divisor += 1    
+
+
+the number of digits in a given number
+
+num = int(input("Enter a number: "))
+count = 0
+
+while num != 0:
+    num //= 10
+    count += 1
+print(count)    
+     
+
+factorial numbers
+
+n = int(input("Enter a number: "))
+def factorial(n):
+    if n==0:
+        return 1
+    else:
+        answer = 1 
+        for y in range(1,n+1):
+            answer = y * answer
+            return answer
+print(factorial(n))
